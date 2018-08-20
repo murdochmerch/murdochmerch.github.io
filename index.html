@@ -1,80 +1,131 @@
 <html>
     <head>
         <style>
+            html
+            {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                font-family: myFirstFont;
+            }
             body
             {
-                font-family: Verdana;
+                margin: 0;
             }
-            .banner
+            @font-face
             {
-                color: rgba(77, 62, 62, 0.301);
-                font-size:36px;
+                font-family: myFirstFont;
+                src: url(Fonts/TannenbergFett.ttf);
+            }
+            .header
+            {
+                height: 30%;
+                background-color: orange;
+            }
+            .top1
+            {
+                background-color: orange;
                 text-align: center;
-                top: 5%;
-                position: fixed;
+                font-family: myFirstFont;
+                font-size: 3em;
+                letter-spacing: .1em;
+                margin: 0;
                 width: 100%;
+                padding-top: .5em;
+                padding-bottom: .1em;
             }
-            .sidebar
+            .top2
             {
-                color: rgba(128, 128, 128, 0.301);
-                font-size:36px;
-                text-align: right;
-                top: 7%;
-                position: fixed;
-                right: 2%;
-                text-decoration: none;
-                z-index: 10;
+                background-color: orange;
+                text-align: center;
+                font-family: myFirstFont;
+                font-size: 3em;
+                letter-spacing: .1em;
+                margin: 0;
+                width: 100%;
+                padding-top: .5em;
+                padding-bottom: 1em;
             }
-            .sidebar:hover
+            .product
             {
-                color: white;
-                opacity: .1;
-            }
-            .parallax
-            {
+                background-size: 100% 100%;
+                width: 49%;
                 min-height: 100%;
-                background-image: url("sun.JPG");
-                background-size: cover;
-                background-position: center;
+                margin-top: 0;
+                margin-right:0;
+                position: block;
+            }
+            .product:hover
+            {
+                opacity: .5;
+            }
+            .hats
+            {
+                text-align: right;
+                min-height: 50%;
+                background-position: right;
                 background-repeat: no-repeat;
-                background-attachment: fixed;
+                margin: 0;
+                padding-right: 0%;
+                margin-left: 10%;
+                position: block;
             }
-            .sun
+            .hats:hover
             {
-                min-height: 120%;
-                background-image: url("bull.JPG");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
+                opacity: .8;
             }
-            .space
+            .pics
             {
+                background-size: contain; 
+                background-repeat: no-repeat; 
+                margin-bottom: 0%;
+                margin: 0;
+                text-align: center;
             }
-            .cow
+            .BuyNow
             {
-                background-image: url("cow.JPG"); 
-                min-height:100%;  
-                background-size: cover;  
-                padding: 0%; 
-                margin: 0; 
-                top: 5em;
+                top: 40%;
+                font-size: 2em;
+                position: relative;
+                background-color: rgba(0, 0, 255, 0.397);
+                width: 20%;
+                margin-left: 40%; 
+                padding: 10px;
+                box-shadow: 1px 1px 10px;
+
+                user-select: none;
+                -moz-user-select: -moz-none;
+                -khtml-user-select: none;
+                -webkit-user-select: none;
+            }
+            .BuyNow:hover
+            {
+                background-color: rgba(1, 1, 146, 0.9);
+                color: whitesmoke;
+                cursor: pointer;
+            }
+            .BuyNow:active 
+            {
+                box-shadow: 0 3px 10px black inset;
+                padding-bottom: 7px;
+            }
+            .BuyNow:active .BuyNowText
+            {
+                margin-top:3px;
+                position: relative;
             }
         </style>
     </head>
-    <body style="margin: 0;">
-        <div class="parallax">
-            <h1 class="banner">B L A N C O E U R <a href="store.html" class="sidebar">SUPPORT</a></h1>
-            <!--<h1 class="sidebar">STORE</h1-->
+    <body>
+        <div class="header">
+            <h1 class="top1">Welcome to Murdochmerch.com <br> Brought to you by Kijan</h1>
+            <h1 class="top2">All your <i style="font-size:.85em;"><span style="font-size: 1.5em;">M</span>URDOCH</i> gear - In one place</h1>
         </div>
-        <div class="sun"><div style="font-size: 9.5em; margin-right: 50%; padding-top: .4em; opacity: .3;">Dedicated to the continuation of right-wing art</div>
-        </div>
-        <div class="space"></div>
-        <div class="cow">
-            <div style="font-size: 3em; font-family: Arial, Helvetica, sans-serif; text-emphasis: bold; opacity: .3; text-align: center; top: 250%; left:20%; position: absolute; color: whitesmoke;">
-                <b>ALL PROCEEDS DIRECTLY SUPPORT THE ARTISTS</b>
-            </div>
+        <!--<img src="shirts.jpg" class="product"><img src="hats.png" class="hats">-->
+        <div class="pics" style="width: 50%; height: 110%; background-image: url(MURPH1.png);"><div class="buyNow"><div class="buyNowText">Buy Now</div></div></div>
+        <div class="pics" style="width: 50%; height: 110%; background-image: url(MURPH2.png); float: right; top: 30%; left: 50%; position: absolute;"><div class="buyNow"><div class="buyNowText">Buy Now</div></div></div>
+        <div style="height: 1.75em; padding-top: 0.25em; margin-bottom: 0; width: 100%; background-color: black; bottom: 0%; position: fixed; color: whitesmoke; text-align: right; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            For any issues with shipping or quality please shoot me an email; "support [at] Murdochmerch.com" &nbsp; 
         </div>
     </body>
-
 </html>
