@@ -88,23 +88,37 @@
                 text-align: center;
                 top: 30%;
             }
-            a
-            {
-                text-decoration: none;
-            }
-            a:visited
-            {
-                color:initial;
-            }
             .BuyNow
             {
                 top: 40%;
+                font-size: 2em;
                 position: relative;
+                background-color: rgba(0, 0, 255, 0.397);
+                width: 20%;
+                margin-left: 40%; 
+                padding: 10px;
+                box-shadow: 1px 1px 10px;
 
                 user-select: none;
                 -moz-user-select: -moz-none;
                 -khtml-user-select: none;
                 -webkit-user-select: none;
+            }
+            .BuyNow:hover
+            {
+                background-color: rgba(1, 1, 146, 0.9);
+                color: whitesmoke;
+                cursor: pointer;
+            }
+            .BuyNow:active 
+            {
+                box-shadow: 0 3px 10px black inset;
+                padding-bottom: 7px;
+            }
+            .BuyNow:active .BuyNowText
+            {
+                margin-top:3px;
+                position: relative;
             }
         </style>
     </head>
@@ -114,39 +128,8 @@
             <h1 class="top2">All your <i style="font-size:.85em;"><span style="font-size: 1.5em;">M</span>ÜRDOCH</i> gear - In one place</h1>
         </div>
         <!--<img src="shirts.jpg" class="product"><img src="hats.png" class="hats">-->
-        <div class="pics" style="width: 50%; height: 110%; background-image: url(shirts.jpg);"><div class="buyNow"><div class="buyNowText"><form action="your-server-side-code" method="POST">
-                <script
-                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-label="Buy Now"
-                    data-key="pk_test_dnHJw9oGIIHfsM9Vo78lUB2M"
-                    data-amount="1488"
-                    data-name="Murdochmerch.com"
-                    data-description="1 Large T-Shirt"
-                    data-image="http://murdochmerch.com/brand.png"
-                    data-locale="auto"
-                    data-shipping-address="true"
-                    token="true">
-                </script>
-            </form></div></div></div>
-        <div class="pics"  style="width: 50%; height: 110%; background-image: url(hats.jpg); float: right; left: 50%; position: absolute;">
-            <div onclick="change" class="buyNow">
-                    <div class="buyNowText"><form action="your-server-side-code" method="POST">
-                            <script
-                                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                data-label="Buy Now"
-                                data-key="pk_test_dnHJw9oGIIHfsM9Vo78lUB2M"
-                                data-amount="1488"
-                                data-name="Murdochmerch.com"
-                                data-description="1 Hat"
-                                data-image="http://murdochmerch.com/brand.png"
-                                data-locale="auto"
-                                data-shipping-address="true"
-                                token="true">
-                            </script>
-                        </form></div>
-            </div>
-        </div>
-            <div></div>
+        <div class="pics" style="width: 50%; height: 110%; background-image: url(shirts.jpg);"><div class="buyNow"><div class="buyNowText">Buy Now</div></div></div>
+        <div class="pics" style="width: 50%; height: 110%; background-image: url(hats.jpg); float: right; left: 50%; position: absolute;"><div class="buyNow"><div class="buyNowText">Buy Now</div></div></div>
         <div style="height: 1.75em; padding-top: 0.25em; margin-bottom: 0; width: 100%; background-color: black; bottom: 0%; position: fixed; color: whitesmoke; text-align: right; font-family: Verdana, Geneva, Tahoma, sans-serif;">
             For any issues with shipping or quality please shoot me an email: "support [at] Murdochmerch.com" &nbsp; 
         </div>
